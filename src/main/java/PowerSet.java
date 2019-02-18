@@ -8,7 +8,11 @@ import java.util.List;
 import java.util.Set;
 
 /** 
- * A collection of different implementations solving the 
+ * File: PowerSet.java
+ * Author: amehlhas, adalvi1
+ * Date: 2/18/18
+ * 
+ * Description: A collection of different implementations solving the 
  * same problem of generating a powerset from a given array
  */
 
