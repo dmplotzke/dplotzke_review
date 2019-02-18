@@ -22,17 +22,17 @@ public class PowerSet
      * Returns a NullPointerException when the array is empty
      * Returns all possible sets formed from a given array
      * 
-     * @param S the array from which powerset is to be generated
+     * @param input the array from which powerset is to be generated
      * @exception NullPointerException if <code>S</code> 
      * is not initialized
      */
-    public static void powerSetImplementation1(int[] S) throws NullPointerException
+    public static void powerSetImplementation1(int[] input) throws NullPointerException
     {
-        if(S == null) {
+        if(input == null) {
         	throw new NullPointerException();
         }
     	// N stores total number of subsets
-        int N = (int)Math.pow(2, S.length);
+        int N = (int)Math.pow(2, input.length);
         Set<String> set = new HashSet<>();
 
         // generate each subset one by one
@@ -41,10 +41,10 @@ public class PowerSet
             String subset = "";
 
             // check every bit of i
-            for (int j = 0; j < S.length; j++) {
+            for (int j = 0; j < input.length; j++) {
                 // if j'th bit of i is set, append S[j] to subset
                 if ((i & (1 << j)) != 0) {
-                    subset += (S[j]) + " ";
+                    subset += (input[j]) + " ";
                 }
             }
 
