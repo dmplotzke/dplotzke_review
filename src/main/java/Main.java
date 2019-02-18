@@ -23,7 +23,7 @@ import java.util.NoSuchElementException;
 			String choice;
 
 			if (args.length == 0) {
-				accStr = "5";
+				accStr = "2 1";
 				choice = "1";
 
 			}
